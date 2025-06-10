@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Campo e Cidade</title>
+</head>
+<body>
+    <div class="contador-visitas">
+        Visitas: <span id="contador">0</span>
+        <button class="botao-contador" id="botaoContador">Conte minha visita</button>
+    </div>
 
+    <header class="header-bg text-center py-5">
+        <div class="container">
+            <h1 class="display-4"><i class="bi bi-tree-fill"></i> Campo e Cidade</h1>
+            <p class="lead mt-3">Como a produção rural alimenta e desenvolve as cidades</p>
+            <a href="#projetos" class="btn btn-success btn-lg mt-3">Conheça nossos projetos</a>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <i class="bi bi-basket2 icon-destaque"></i>
+                    <h3>Alimentos Frescos</h3>
+                    <p>70% do que consumimos nas cidades vem da agricultura familiar</p>
+                    <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalAlimentos">+ detalhes</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <i class="bi bi-currency-dollar icon-destaque"></i>
+                    <h3>Economia Forte</h3>
+                    <p>25% do PIB brasileiro vem do agronegócio</p>
+                    <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalEconomia">+ detalhes</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <i class="bi bi-people icon-destaque"></i>
+                    <h3>Empregos</h3>
+                    <p>18 milhões de empregos diretos gerados no campo</p>
+                    <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalEmpregos">+ detalhes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projetos que Conectam</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="fotosdocampo/campo1.jpg" class="card-img-top" alt="Feira do produtor">
+                        <div class="card-body">
+                            <h5 class="card-title">Feiras do Produtor</h5>
+                            <p class="card-text">Conexão direta entre agricultores e consumidores urbanos, eliminando intermediários e garantindo preços justos.</p>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalFeiras">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="fotosdocampo/cara.jpg" class="card-img-top" alt="Transporte de alimentos">
+                        <div class="card-body">
+                            <h5 class="card-title">Logística Inteligente</h5>
+                            <p class="card-text">Sistema de transporte coletivo que reduz em 30% o desperdício de alimentos no caminho do campo para a cidade.</p>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalLogistica">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
